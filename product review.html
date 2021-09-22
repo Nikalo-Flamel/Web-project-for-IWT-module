@@ -1,0 +1,107 @@
+<html>
+  <head>
+   <link rel="stylesheet" href="css/product view.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+<div class="padding1">
+	<div class="container" >
+		<div class="row">
+			<div class="cal">
+				<div class = "mane_img" >
+					<figure><img id=featured src="imgs/4.png" alt="short_img" /></figure>
+				</div>
+				<div class="row short">
+				<img id="slideLeft" class="arrow" src="imgs/arrow-left.png">
+
+				<div id="slider">
+					<img class="thumbnail active" src="imgs/4.png">
+					<img class="thumbnail" src="imgs/6.png">
+					<img class="thumbnail" src="imgs/7.png">
+				</div>
+
+				<img id="slideRight" class="arrow" src="imgs/arrow-right.png">
+				</div>
+			</div>
+			<div class ="cal product_side">
+				<div>
+					<div class ="product_heading" >
+						<h2>Yamaha Acoustic Guitar - F 310</h2>
+					</div>
+					<hr>
+					<div class="product-detail-side">
+					<span><del>Rs. 22,886</del></span><span class="new-price">Rs. 19,341</span>                      
+					</div>
+					<form class="cart" method="post" action="shop-cart.html">
+						<div class="quantity">
+							<p>quality</p>
+							<input step="1" min="1" max="5" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" type="number"></br>
+						</div>
+						</br>
+							<button type="submit" class="addbutton">Add to cart</button>
+							<button type="submit" class="buybutton">buy it now</button>
+					</form>
+					<div class="detail-contant">
+					<ul class ="value">
+						<li class ="value"> Excellent quality and brand.</li>
+						<li class ="value"> 100% Original Product</li>
+						<li class ="value"> High-Quality Material</li>
+						<li class ="value">Ideal for all occasions </li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cal row">
+		<div class="product_desc">
+			<hr>
+			<h3>Product details of Yamaha Acoustic Guitar - F 310</h3>
+			<p>Traditional Western Body Back/Side/Neck Material:Locally Sourced Tonewood(To minimize waste and support sustainable procurement, various species of tonewoods are used based on availability.)<br>
+				Top Material:Spruce,Fingerboard Material:Rosewood, Bridge Material:Rosewood<br>
+				Tuners:Covered Chrome(TM-14P), Finger Board Width (Nut/Body) 43 mm (1 11/16")<br>
+				Strings:.012/.016/.025(or.024)/.033(.032)/.043(.042)/.053(.052)<br>
+				It is precision manufactured and hand-finished to exacting ISO standards and offers the same focus on quality, design and sound as all Yamaha acoustics<br>
+				The F310 consists of a spruce top, back and sides are Meranti, a Nato neck and a rosewood fretboard<br>
+				The handling comfort of the slightly reduced body depth and intermediate scale length will be particularly appreciated by younger players.<br>
+			</p>
+			<p>What’s in the box	:   Luxury Carbon Fiber Car Protecting Sticker </p>
+		</div>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+
+	</script>
+</body>
+ </html>

@@ -1,0 +1,101 @@
+
+.row {
+	display :flex;
+	align-content: center;
+
+}
+
+.row1{
+	margin-right: 300px;
+    margin-left: 300px;
+	align-content: center;
+}
+.title {
+	text-align:center;
+	padding-bottom: 10px;
+}
+.contactus {
+     background-color: white;
+     padding: 0px 0px;
+}
+.contactus .title {
+ padding-bottom: 0px;   
+text-align: center;
+}
+
+.contactus .title h1 {
+	font-weight: bold;
+	font-weight: 500; 
+	font-size:60px;
+	font-family: Bree Serif;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+    background: #547d13;
+    display: inline-block;
+    padding: 20px 30px;
+
+}
+.basic{
+	min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+}
+.form{
+	margin: 0 0 20px;
+}
+.form h4{
+	font-size: 21px;
+    font-weight: 700;
+	margin-top:0px;
+	border-bottom:2px solid white
+}
+.group_label{
+	float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;	
+}
+.group_label sup{
+	color:red;
+}
+.controls{
+	margin-left: 180px;
+	padding-top: 5px;
+}
+
+.group{
+	margin-bottom: 20px;
+}
+.input {
+	width: 80%;
+	height: 28px;
+    border-radius: 0;
+	border: 1px solid #c4c6cf;
+}
+.input2 {
+	width: 50%;
+	height: 28px;
+    border-radius: 0;
+	border: 1px solid #c4c6cf;
+}
+.inputd {
+	width: 50%;
+	height: 150px;
+    border-radius: 0;
+	border: 1px solid #c4c6cf;
+}
+.Description{
+	min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+}
+.submitbuton{
+	background: #000;
+    padding: 10px 22px;
+    color: #fff;
+}

@@ -1,0 +1,504 @@
+.nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navItem {
+    padding: 0px 5px;
+    border-bottom: solid 4px #00000052;
+    margin: 0px 15px;
+    font-size: 20px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    height: 60px;
+    padding-left: 3px;
+}
+
+.nav_img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    /* margin-left: 3px; */
+}
+
+#payement {
+    font-weight: 600;
+    border-bottom: solid 4px black;
+}
+
+.root {
+    background-color: #D2D7D3;
+    background: url('../imgs/cover3.jpg') no-repeat center fixed;
+    background-size: auto;
+    background-size: cover;
+}
+
+.cartSection {
+    max-width: 1200px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.productsSection {
+    flex: 0 0 70%;
+    /* width: 70%; */
+    max-width: 70%;
+    padding-left: 8px;
+    padding-right: 30px;
+}
+
+.cartHead {
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 1.28571;
+    color: #000;
+}
+
+.product {
+    color: #000;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    max-width: 750px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 47%;
+    min-width: 200px;
+}
+
+.formRowHeading{
+    height:50px;
+}
+
+.formRowHeadingH {
+    font-size: 22px;
+    font-weight: 500;
+    margin: auto 0;
+}
+
+.formLabel {
+    position: absolute;
+    top: 22px;
+    font-size: 19px;
+}
+
+.paymentOptionRadio{
+    justify-content: flex-start;
+}
+
+.paymentOption{
+    width: 31%;
+    display: flex;
+    align-items: center;
+}
+
+.paymentOptionInput{
+    margin: auto 0;
+    padding: 0 10px;
+}
+
+.paymentOptionLabel{
+    display: flex;
+    position: inherit;
+    align-items: center;
+}
+
+.paymentOptionImg {
+    height:50px;
+    margin-top: 7px;
+}
+
+.paymentOptionLabelDis{
+    margin-left: 10px;
+}
+
+.paymentOptionLabelDisP{
+    margin: 0;
+}
+
+.cardTypeInput{
+    padding-left: 0;
+}
+
+.cartType{
+    padding: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.cardTypeImg {
+    height:40px;
+}
+
+.formData {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-top: 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    z-index: 100;
+    background-color: transparent;  
+    outline: none;
+    font-weight: 500;
+}
+
+.formDataFocus{
+    border-bottom: 1px solid blue;
+}
+
+.formDataValid {
+    border-bottom: 2px solid green;
+}
+
+.formDataInvalid {
+    border-bottom: 2px solid red;
+}
+
+.formDropdownSelectLabel {
+    font-size: 17px;
+    color: gray;
+    top: 0px;
+}
+
+.formDropdownSelectData {
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    max-width: 200px;
+    width: 100%;
+}
+
+#postalcode {
+    width: 140px;
+}
+
+.dropdownItem {
+    width: 35%;
+}
+
+.dropdownRow {
+    justify-content: unset;
+}
+
+.province {
+    width: 47%;
+}
+
+#province {
+    width: 355px;
+    max-width: unset;
+}
+
+#number {
+    width: 200px;
+}
+
+.countryCodeItem {
+    width: 140px;
+    min-width: unset;
+}
+
+#countryCode {
+    width: 120px;
+}
+
+.submitItem{
+    justify-content: center;
+}
+
+.formSubmit {
+    width: 170px;
+    background-color: rgba(255,0,0,0.7);
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.formSubmit:hover {
+    background-color: rgba(255,0,0,0.5);
+}
+
+.summarySection {
+    /* flex: 0 0 30%; */
+    max-width: 30%;
+    /* position: relative; */
+    box-sizing: border-box;
+    /*position: fixed !important;*/
+    top: 16px;
+    width: 348.8px;
+    padding: 20px 30px 5px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    margin-top: 25px;
+    position: sticky;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.summarySection:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.summary_details {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    max-height: 170px;
+    overflow: auto;
+}
+
+.summaryProduct{
+    display: flex;
+    align-items: center;
+}
+
+.summaryProductImage{
+    padding: 5px 10px;
+}
+
+.summaryProductImageFile{
+    height:60px;
+    width:60px;
+}
+
+.summaryProductDetails{
+    padding-left: 10px;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.summaryProductDetailsH5{
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+.summaryProductDetailsPrice{
+    margin: 0px;
+    padding: 0px;
+}
+
+dl {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.love {
+    padding: 12px 30px 8px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 1.28571;
+    color: #000;
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.moreToLove {
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 20%;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.2), 1px 4px 4px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px 5px;
+    margin-bottom: 13px;
+    border-radius: 8px;
+}
+
+.item:hover {
+    /* box-shadow: 2px 4px 6px 1px rgba(186, 53, 0, 0.5); */
+    box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.itemImage {
+    display: flex;
+    justify-content: center;
+}
+
+.itemImage1 {
+    width: 150px;
+    height: 135px;
+    /* border: 1px black solid; */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    /* box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.itemDetials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemh4{
+    margin: 0px;
+    padding: 0px;
+}
+
+#order_summary {
+    margin: 10px 0px 30px 0px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+hr {
+    height: 1px;
+}
+
+.summary_total {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.summary_btn {
+    display: grid;
+    justify-items: center;
+}
+
+#summary_button {
+    padding: 10px 25px;
+    background-color: rgba(255,0,0,0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#summary_button:hover {
+    opacity: 0.5;
+}
+
+
+
+
+.moretolove_title {
+    margin: 5px auto;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.moretolove_price {
+    margin: 0px;
+    font-size: 19px;
+}
+
+.moretolove_sold {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.nextbtnSection {
+    display: flex;
+    width: 8%;
+}
+
+.nextbtn {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.nextbtnimg{
+    height: 130px;
+    width: 100%;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.nextbtnimg:hover {
+    opacity: 1;
+}
+
+.formItemtoogle {
+    position: absolute;
+    transition: 300ms;
+}
+
+
+
+
+.clickFormData {
+    font-size: 16px;
+    color: gray;
+    top: 10px;
+    transition: 300ms;
+}
+
+.formItemDisabled {
+    opacity: 0.4;
+}
+
+.displaynone {
+    display: none;
+}
+
+.display {
+    display: flex; 
+    position: relative;
+}
+
+#ShippingFormSubmit {
+    border-radius: 5px;
+}
+
+.hide {
+    opacity: 0.3;
+}
+
+#totalPrice {
+    margin: 0;
+}

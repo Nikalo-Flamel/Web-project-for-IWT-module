@@ -1,0 +1,148 @@
+
+
+
+.warrentyHeadingImg{
+    max-width: 1450px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.warrentyCoverImg{
+    width: 100%;
+    max-height: 500px;
+}
+
+.warrentyHeadingDis {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.warrentyHeadingDisH2{
+    font-size: 50px;
+    margin: 10px;
+}
+
+.warrentyHeadingDisP {
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+
+
+.warrentyCoveredHeading{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+
+.warrentyCoveredBar{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    height: 64px;
+}
+
+.warrentyCoveredItem{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.warrentyCoveredItem:hover{
+    background-color: black;
+    color: #1f9efa;
+    border: 2px white dashed;
+}
+
+.warrentyCardSection{
+    display: flex;
+    justify-content: center;
+}
+
+.warrentyCard{
+    width: 400px;
+    text-align: center;
+    margin: 50px 0;
+    border: 1px solid #00000059;
+}
+
+.warrentyCardHeading{
+    height: 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.warrentyCardPeriod{
+    padding: 20px 0;
+}
+
+.warrentyCardHed{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 40px;
+}
+
+.warrentyCardPeriodDetailsNum{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.warrentyCardDetails{
+    padding: 0 45px;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.warrentyCardHr{
+    width: 300px;
+    margin: 0 auto; 
+    color: #00000059;
+}
+
+.warrentyCardPeriodLast{
+    padding-bottom: 40px;
+}
+
+.warrentyPolicyDetails{
+    width: 90%;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 40px 150px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.warrentPolicyDetailsHed{
+    font-size: 23px;
+    margin: 40px 0;
+}
+
+.warrentPolicyDetailsPara{
+    font-family: aral;
+    font-size: 17px;
+    line-height: 25px;
+    color: #666;
+}

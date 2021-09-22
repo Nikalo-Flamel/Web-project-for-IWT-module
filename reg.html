@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Online music instrument</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/reg.css">
+    </head>
+    <body>
+
+
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="imgs/sonidoslogo.jpg" alt="Logo" width="100px" height="150px"></a>
+        </div>
+        <div class="search-bar">
+          <table class="elementsContainer">
+            <tr>
+              <td>
+                <a href="#"><i class="fa fa-search"></i></a>
+              </td>
+              <td>
+                <form method="post" action="search.php">
+                  <input type="text" placeholder="Search" class="search" name="result">
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="name">SONIDOS</div>
+          <div class="menu2">
+            <ul>
+              <li><button class="btn1"><a href="login.html">Login</a></button></li>
+              <li><button class="btn1"><a href="reg.html">Sign Up</a></button></li>
+              <li><button class="btn1"><a href="Cart.php">Cart</a></button></li>
+              <li>	
+                <div class="language">
+                  <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="Sinhala">Sinhala</option>
+                    <option value="Tamil">Tamil</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</i></li>
+          <li class="active"><a href="#">Categories</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="category.html">Guitars</a></li>
+                <li><a href="category.html">Keyboards</a></li>
+                <li><a href="category.html">Pianos</a></li>
+                <li><a href="category.html">Drums & Percussions</a></li>
+                <li><a href="category.html">Home Audio Equipments</a></li>
+              </ul>
+            </div>
+          </li>	
+          <li><a href="free_service.html">Service</a></li>
+          <li><a href="warranty.html">Warrenty</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+
+        <div class="backgroungimg">
+            <img src="imgs/reg.jpg">
+        </div>
+        <div class="center">
+            <h1>SIGN UP</h1>
+			<div id="success_msg" class="alert-success" style="display:none"> 
+			   Indicates a dangerous or potentially negative action.
+			</div>
+			<div id ="unsuccess_msg" class="alert-danger" style="display:none"> 
+			   Indicates a dangerous or potentially negative action.
+			</div>
+            <form id="register">
+                <div class="input_field">
+                    <input type="text" id="name" name="name" >
+                    <label>Full Name</label>
+                </div>
+
+                <div class="input_field">
+                    <input type="mail" id="e-mail" name="e-mail" >
+                    <label>Email</label>
+                </div>
+
+                <div class="input_field">
+                    <input type="text" id="username" name="username" >
+                    <label>User name</label>
+                </div>
+
+                <div class="input_field">
+                    <input type="password" id="password" name="password" >
+                    <label>Password</label>
+                </div>
+                <div class="input_field">
+                    <input type="password" id="confirm_password" name="confirm_password" >
+                    <label>Repeat password</label>
+                </div>
+				
+                <div class="pass">
+					<input type="submit" value="SIGNUP">
+				</div>
+                <div class="signup_link">
+                    Already have an account ? Let's <a href="login.html">LOGIN</a>
+                </div>
+             </form>
+     </div>
+     
+
+     <div class="footer">
+      <div class="content">
+          <div class="row">
+              <div class="footer-col1">
+                  <h4>Customer Care</h4>
+                      <ul>
+                          <li><a href="#">Help Center</a></li>
+                          <li><a href="#">How to Buy</a></li>
+                          <li><a href="#">Track Your Order</a></li>
+                          <li><a href="#">Corporate Purchasing</a></li>
+                          <li><a href="#">Returns & Refunds</a></li>
+                          <li><a href="contact us.html">Contact Us</a></li>
+                          <li><a href="aboutus.html">About Us</a></li>
+                      </ul>
+              </div>
+              <div class="footer-col2">
+                  <h4>Payments Methods</h4>
+                      <button class="btn3">Cash on Delivery</button></li>
+                      <img src="imgs/visa.jpg" width="75" height="50">
+                      <img src="imgs/mastercard.jpg" width="75" height="50">
+              </div>
+              <div class="footer-col3">
+                  <h4>Contact Us</h4>
+                      <ul>
+                          <li><i class="fa fa-envelope-open-o"><a href="#">Sonidos(Pvt)Ltd. No 82, Pannipitiya Road, Battaramulla, Sri Lanka</a></i></li>
+                          <li><i class="fa fa-phone"><a href="#">+94 112 233545</a></i></li>
+                          <li><i class="fa fa-envelope-o"><a href="#">info@sonidos.lk</a></i></li>
+                      </ul>
+              </div>
+          <div class="social-icons">
+              <h4>Reach Us On</h4>
+              <ul>
+                  <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              </ul>
+          </div>
+      </div>
+</div>
+
+
+		<script>
+		  register.onsubmit = async (e) => {
+			e.preventDefault();
+			let response = await fetch('register.php',{
+			  method: 'POST',
+			  body: new FormData(register)
+			});
+			let result = await response.json();
+			if(result.status==1){
+				
+				unsuccess_msg.style.display = 'none'; 
+				document.getElementById('success_msg').innerHTML = result.msg;
+				success_msg.style.display = 'block'; 
+			}else{
+				
+				success_msg.style.display = 'none'; 
+				document.getElementById('unsuccess_msg').innerHTML = result.msg;
+				unsuccess_msg.style.display = 'block'; 
+			}
+		  };
+			var password = document.getElementById("password"),confirm_password = document.getElementById("confirm_password");
+			function validatePassword(){
+			  if(password.value != confirm_password.value) {
+				confirm_password.setCustomValidity("Passwords Don't Match");
+			  } else {
+				confirm_password.setCustomValidity('');
+			  }
+			}
+			password.onchange = validatePassword;
+			confirm_password.onkeyup = validatePassword;
+		</script> 
+    </body>
+</html>

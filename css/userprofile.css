@@ -1,0 +1,137 @@
+body{
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.navbar{
+  background-color: teal;
+  width: 200px;
+  
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 250px;
+  
+}
+.profilepic {
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 10px;
+ 
+}
+h4{
+  text-align: center;
+}
+.bar img{
+  height: 15px;
+  width: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.contain img{
+  height: 30px;
+  width: 30px;
+}
+.contain{
+  position: absolute;
+  background-color: white;
+  margin-left: 480px;
+  margin-top: 150px;
+  width: 800px;
+  height: 500px;
+
+}
+.contain form{
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-left: 100px;
+
+}
+form .input_field{
+  position: relative;
+
+
+}
+#caddress{
+  
+  margin-left: 100px;
+  border: none;
+  border-bottom:1px solid grey;
+}
+.input_field input{
+  
+  width: 300px;
+  margin-left: 100px;
+  border: none;
+  border-bottom:1px solid grey;
+ 
+}
+.input_field label{
+  
+  color: gray;
+}
+
+button[type="submit"]{
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  background:green;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  outline: none;
+  margin-left: 100px;
+}
+
+button[type="submit"]:hover{
+  border-color:#2691d9;
+  transition: .5s;
+  }
+  button[type="reset"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    background:red;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+    margin-left: 60px;
+   
+}
+  
+  button[type="reset"]:hover{
+    border-color:#2691d9;
+    transition: .5s;
+    }
+
+
+  #adminpage{
+    font-size: 20px;
+    color: white;
+    background-color: #008080;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+  }

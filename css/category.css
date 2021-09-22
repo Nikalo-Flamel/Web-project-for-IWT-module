@@ -1,0 +1,144 @@
+body{
+	background-color:rgb(255, 153, 153);
+	background-image:url("../imgs/background.jpg");
+}
+h2{
+	font-size:50px;
+	color:white;
+	text-align:center;
+	font-style:"Times New Roman", Times, serif;
+	text-shadow:5px 5px  rgb(51, 51, 51);
+	justify-content:center;
+	height:100px;
+	background-color:grey;
+}
+.instru{
+    color:black;
+	
+	font-family: Arial Rounded MT,Bold;
+	font-size:18px;
+	
+}
+.row {
+	display :flex;
+	align-content: center;
+	padding-bottom:20px;
+}
+.cal{
+position:relative;
+width:100%;
+min-height:2px;
+padding-right:15px;
+padding-left:15px;
+flex:0 0 33.333333%;
+max-width:33.333333%;
+}
+.title1 {
+     background-color: white;
+     padding: 40px 0px;
+}
+.full{
+	max-width:1140px;
+	margin-right: 30px;
+    margin-left: 30px;
+}
+
+.product_img {
+    float: left;
+    width: 100%;
+    min-height: 370px;
+    padding: 25px;
+    position: relative;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+.product_style .product_img .center img {
+	height: 250px;
+	}
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.buy_it_now {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    transition: ease all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+}
+
+.product:hover .buy_it_now, .product:focus .buy_it_now {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.add-bt {
+    min-width: 130px;
+    text-align: center;
+    background: #fff;
+    height: 45px;
+    line-height: 46px;
+    color: #0fbbad;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    box-shadow: 0 0 10px -8px #000;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+
+.product_detail {
+	background: #fff;
+    border: solid #e1e1e1 1px;
+    width: 80%;
+    margin: -40px 10% 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.light_red .product_price {
+    color: #ff9999;
+}
+.product_price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0fbbad;
+    margin: 0;
+
+}
+
+.old_price {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 14px;
+    color: #707070;}
+	
+.product_dis {
+    margin: 5px 0 0;
+    padding: 0 10px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 400;
+
+}
+
+

@@ -1,0 +1,140 @@
+body{
+	background-color: pink;
+	background-image: url("../imgs/background3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;	
+}
+
+h2{
+	font-family: font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+	color: white;
+	text-shadow: 5px 5px  rgb(77, 77, 77);
+	background-color:grey;
+	
+}
+.personal{
+	font-size: 30px;
+	color: black;
+	padding: 40px 40px;
+	
+}
+.map{
+	padding-top:10px;
+	
+}
+
+.f-inputs{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-inputs input{
+    width:300px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid orange;
+    outline: none;
+    margin: 10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+	font-size: 18px;
+}
+.f-inputs textarea{
+    width:300px;
+    height: 200px;
+    outline: none;
+    background-color: transparent;
+    border:4px solid orange;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    font-size:18px;
+    box-sizing: border-box;
+	
+}
+.f-inputs button{
+    width:250px;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    border: 2px;
+    outline: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: Arial Rounded MT,Bold;
+    margin-left:10%;
+}
+
+.f-inputs button:hover{
+    background-color:white ;
+}
+
+.f-inputs input:focus{
+    border-bottom: 1px solid white;
+    transition:  0.5s;
+}
+.f-inputs textarea :focus{
+	border-bottom: 1px solid white;
+	transition: 0.5s;
+	border: none;
+	background-color: rgba(0,0,0,0.1);
+	
+}
+
+h3{
+	font-size: 40px;
+	padding-left:10px;
+	padding-bottom:100px;
+	color:black;
+}
+h1{
+	font-size: 50px;
+	padding-left:10px;
+	padding-bottom:90px;
+	color : orange;
+}
+.social a{
+    padding-right: 50px;
+    color:white;
+    font-size:70px;
+}
+.social{
+	padding-right :50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    background-color:black;
+    box-shadow: 0 8px 16px 0 black, 0 6px 20px black;
+    
+}
+.social a:hover{
+    color:orange;
+    transition: all ease 0.3s;
+}
+
+.connect{
+	line-height:0px;
+}
+
+.address{
+	font-size:25px;
+	margin-left:100px;
+}
+.abc{
+	position:relative;
+	bottom:30px;
+}
+.jkl{
+	position:relative;
+	top:40px;
+}

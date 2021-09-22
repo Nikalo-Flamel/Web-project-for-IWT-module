@@ -1,0 +1,243 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/admin_page.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/myscripts.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		<div class="logo">
+			<!-- <a href="index.html"><img src="imgs/music-logo.jpg" alt="Logo" width="300" height="150"></a> -->
+			<a href="index.html"><img src="imgs/sonidoslogo.jpg" alt="Logo" width="100px" height="150px"></a>
+		</div>
+		<div class="search-bar">
+			<table class="elementsContainer">
+				<tr>
+					<td>
+						<a href="#"><i class="fa fa-search"></i></a>
+					</td>
+					<td>
+						<form method="post" action="search.php">
+							<input type="text" placeholder="Search" class="search" name="result">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="name">SONIDOS</div>
+			<div class="menu2">
+				<ul>
+					<li><button class="btn1"><a href="login.html">Login</a></button></li>
+					<li><button class="btn1"><a href="reg.html">Sign Up</a></button></li>
+					<li><button class="btn1"><a href="Cart.php">Cart</a></button></li>
+					<li>	
+						<div class="language">
+							<select name="languages" id="languages">
+								<option value="English">English</option>
+								<option value="Sinhala">Sinhala</option>
+								<option value="Tamil">Tamil</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<div class="menu">
+		<ul>
+			<li class="active"><a href="index.html">Home</i></li>
+			<li><a href="#">Categories</a>
+				<div class="sub-menu">
+					<ul>
+						<li><a href="#">Guitars</a></li>
+						<li><a href="#">Keyboards</a></li>
+						<li><a href="#">Pianos</a></li>
+						<li><a href="#">Drums & Percussions</a></li>
+						<li><a href="#">Home Audio Equipments</a></li>
+					</ul>
+				</div>
+			</li>	
+			<li><a href="free_service.html">Service</a></li>
+			<li><a href="warranty.html">Warrenty</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contact us.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+
+
+	<div class="contactus">
+		<div>
+			<div class="row">
+				<div class="cal">
+					<div class="title">
+                     <h1>Basic Information</h1>
+					 <hr>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form class="form" method="post" action="adminsql.php">
+		<div class="row1">
+			<div class="basic">
+				<h4>basic information</h4>
+				<div class="group">
+					<label class="group_label" for="Product_Name">Product Name <sup>*</sup></label>
+					<div class="controls">
+						<input type="text" class="input" id="Product_Name" name="Product_Name" cols="500" placeholder="Ex. d138 piano" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Brand">Brand <sup>*</sup></label>
+					<div class="controls">
+						<input type="text"class="input2" id="Brand" name="Brand" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Weight">Package Weight (kg) <sup>*</sup></label>
+					<div class="controls">
+						<input type="text" class="input2" id="Weight" name="Weight" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Warranty_Type ">Warranty Type </label>
+					<div class="controls">
+						<input type="text" class="input2" id="Warranty_Type" name="Warranty_Type" placeholder="input here">
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Material">Body Material</label>
+					<div class="controls">
+						<input type="text" class="input2" id="Material" name="Material" placeholder="input here">
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="color">color</label>
+					<div class="controls">
+						<input type="text" class="input2" id="color" name="color" placeholder="input here">
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="box">What's in the box</label>
+					<div class="controls">
+						<input type="text" class="input2" id="box" name="box" placeholder="input here">
+					</div>
+				</div>
+			
+		</div>
+		</div>
+		<div class="row1">
+			<div class="Description">
+			
+				<h4>Detailed Description</h4>
+				<div class="group">
+					<label class="group_label" for="specificetion">specificetion<sup>*</sup></label>
+					<div class="controls">
+					<input type="text" class="inputd" id="specificetion" name="specificetion" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Description">Description<sup>*</sup></label>
+					<div class="controls">
+						<input type="text" class="inputd" id="Description" name="Description" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="image">Upload image <sup>*</sup></label>
+					<div class="controls">
+						<input type="file" class="input2" id="image" name="image1" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="image2">Upload image</label>
+					<div class="controls">
+						<input type="file" class="input2" id="image2" name="image2" placeholder="input here">
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="image3">Upload image</label>
+					<div class="controls">
+						<input type="file" class="input2" id="image3" name="image3" placeholder="input here">
+					</div>
+				</div>
+			
+		</div>	
+	</div>
+	<div class="row1">
+		<div class="Description">
+			
+				<h4>Price & Stock</h4>
+				<div class="group">
+					<label class="group_label" for="Price">Price<sup>*</sup></label>
+					<div class="controls">
+						<input type="text" class="input2" id="Price" name="Price" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Quantity">Quantity<sup>*</sup></label>
+					<div class="controls">
+						<input type="text" class="input2" id="Quantity" name="Quantity" placeholder="input here" required>
+					</div>
+				</div>
+				<div class="group">
+					<label class="group_label" for="Free">Free Items</label>
+					<div class="controls">
+						<input type="text" class="input2" id="Free" name="Free" placeholder="input here">
+					</div>
+				</div>
+				<div class="group">
+					<div class="controls">
+						<input class="submitbuton" type="submit" name="btnsubmit" value="submit" />
+					</div>
+				</div>
+			</form>
+		</div>	
+	</div>
+
+	<div class="footer">
+		<div class="content">
+			<div class="row">
+				<div class="footer-col1">
+					<h4>Customer Care</h4>
+						<ul>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">How to Buy</a></li>
+							<li><a href="#">Track Your Order</a></li>
+							<li><a href="#">Corporate Purchasing</a></li>
+							<li><a href="#">Returns & Refunds</a></li>
+							<li><a href="contact us.html">Contact Us</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+						</ul>
+				</div>
+				<div class="footer-col2">
+					<h4>Payments Methods</h4>
+						<button class="btn3">Cash on Delivery</button></li>
+						<img src="imgs/visa.jpg" width="75" height="50">
+						<img src="imgs/mastercard.jpg" width="75" height="50">
+				</div>
+				<div class="footer-col3">
+					<h4>Contact Us</h4>
+						<ul>
+							<li><i class="fa fa-envelope-open-o"><a href="#">Sonidos(Pvt)Ltd. No 82, Pannipitiya Road, Battaramulla, Sri Lanka</a></i></li>
+							<li><i class="fa fa-phone"><a href="#">+94 112 233545</a></i></li>
+							<li><i class="fa fa-envelope-o"><a href="#">info@sonidos.lk</a></i></li>
+						</ul>
+				</div>
+			<div class="social-icons">
+				<h4>Reach Us On</h4>
+				<ul>
+					<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>

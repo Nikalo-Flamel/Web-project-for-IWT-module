@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    height: 100vh;
+    overflow: scroll;
+}
+.backgroungimg img {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.backgroungimg img {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.center{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+}
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+form .input_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.input_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.input_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.input_field input:focus ~ label,
+.input_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+input[type="submit"]{
+    width: 50%;
+    height: 50px;
+    
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color:#2691d9;
+    transition: .5s;
+    }
+    .signup_link{
+        margin: 30px 0;
+        text-align: center;
+        font-size: 16px;
+        color: #666666;
+    }
+    .signup_link a{
+        color: #2691d9;
+        text-decoration: none;
+    }
+    
+    .signup_link a:hover{
+        text-decoration: underline;
+    }  
+	.alert-success {
+		position:relative;
+		padding: 20px;
+		background-color: #278a20;
+		color: white;
+	}
+	.alert-danger {
+		position:relative;	
+		padding: 20px;
+		background-color: #f44336;
+		color: white;
+	}
+	

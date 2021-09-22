@@ -1,0 +1,187 @@
+p {
+    margin: 0;
+}
+
+.nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navItem {
+    padding: 0px 5px;
+    border-bottom: solid 4px #00000052;
+    margin: 0px 15px;
+    font-size: 20px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    height: 60px;
+    padding-left: 3px;
+}
+
+.nav_img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    /* margin-left: 3px; */
+}
+
+.root {
+    background: url('../imgs/cover6.jpg') no-repeat center;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #8c8c8cd1;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+.headingRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+}
+
+.headingRowImg {
+    padding: 0 15px;
+}
+
+.heading_img {
+    height: 80px;
+    width: 77px;
+}
+
+.headingRowTitle {
+    font-size: 30px;  
+    color: #20ec0a;  
+}
+
+.headingDis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 60px;
+    flex-direction: column;
+}
+
+.headingDisPara {
+    height: 30px;
+}
+
+.Customer_Name {
+    text-transform: capitalize;
+}
+
+.ShippingPhone {
+    line-height: 45px;
+}
+
+.invoieMain {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-transform: capitalize;
+}
+
+.invoiceHeadingRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.invoiceHeading {
+    font-size: 40px;
+}
+
+.invoiveHeaddingH5 {
+    margin: 0;
+}
+
+.invoiceNumberOrder {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.invoiceNumberOrderNum {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.invoiceDisRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoiceShipping {
+    width: 50%;
+}
+
+.invoiceShippingRow {
+    margin: 20px 0;
+}
+
+.invoiveShippingHeadingH5{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.invoiceShippingDetailsPara {
+    font-size: 21px;
+}
+
+.ShippingName {
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.invoiceOrder {
+    width: 50%;
+}
+
+.invoiceOrderTable {
+    font-size: 21px;
+    width: 100%;
+}
+
+.invoiceOrderTableRow {
+    line-height: 35px;
+}
+
+.TableSubTotal {
+    font-weight: 900;
+}
+
+.TableTotal {
+    font-size: 23px;
+    font-weight:900;
+    line-height: 50px;
+    /* border-top: 1px solid black; */
+}
+
+.invoiceGif {
+    display: flex;
+    justify-content: center;
+}
+
+.invoiceGifImg {
+    height: 270px;
+}
+
+.invoiceShippingDetailsPara {
+    line-height: 22px;
+}

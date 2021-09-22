@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Online music instrument</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+
+
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="imgs/sonidoslogo.jpg" alt="Logo" width="100px" height="150px"></a>
+            </div>
+            <div class="search-bar">
+                <table class="elementsContainer">
+                    <tr>
+                        <td>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </td>
+                        <td>
+                            <form method="post" action="search.php">
+                                <input type="text" placeholder="Search" class="search" name="result">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="name">SONIDOS</div>
+                <div class="menu2">
+                    <ul>
+                        <li><button class="btn1"><a href="login.html">Login</a></button></li>
+                        <li><button class="btn1"><a href="reg.html">Sign Up</a></button></li>
+                        <li><button class="btn1"><a href="Cart.php">Cart</a></button></li>
+                        <li>	
+                            <div class="language">
+                                <select name="languages" id="languages">
+                                    <option value="English">English</option>
+                                    <option value="Sinhala">Sinhala</option>
+                                    <option value="Tamil">Tamil</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        <div class="backgroungimg">
+            <img src="imgs/login3.jpg">
+        </div>
+        
+
+        <div class="center">
+            <h1>LOGIN</h1>
+			<div id ="unsuccess_msg" class="alert-danger" style="display:none"> 
+			   
+			</div>
+            <form id="login">
+                <div class="input_field">
+                    <input type="text" id="username" name="username" required>
+                    <label>Email or User name</label>
+                </div>
+                <div class="input_field">
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgetten password ?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Don't you have an account ? Let's <a href="reg.html">Sign Up</a>
+                </div>
+                 </div>
+            </form>
+        </div>
+
+
+        <div class="footer">
+            <div class="content">
+                <div class="row">
+                    <div class="footer-col1">
+                        <h4>Customer Care</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">How to Buy</a></li>
+                                <li><a href="#">Track Your Order</a></li>
+                                <li><a href="#">Corporate Purchasing</a></li>
+                                <li><a href="#">Returns & Refunds</a></li>
+                                <li><a href="contact us.html">Contact Us</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col2">
+                        <h4>Payments Methods</h4>
+                            <button class="btn3">Cash on Delivery</button></li>
+                            <img src="imgs/visa.jpg" width="75" height="50">
+                            <img src="imgs/mastercard.jpg" width="75" height="50">
+                    </div>
+                    <div class="footer-col3">
+                        <h4>Contact Us</h4>
+                            <ul>
+                                <li><i class="fa fa-envelope-open-o"><a href="#">Sonidos(Pvt)Ltd. No 82, Pannipitiya Road, Battaramulla, Sri Lanka</a></i></li>
+                                <li><i class="fa fa-phone"><a href="#">+94 112 233545</a></i></li>
+                                <li><i class="fa fa-envelope-o"><a href="#">info@sonidos.lk</a></i></li>
+                            </ul>
+                    </div>
+                <div class="social-icons">
+                    <h4>Reach Us On</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+		<script>
+			login.onsubmit = async (e) => {
+				e.preventDefault();
+				let response = await fetch('login.php',{
+				  method: 'POST',
+				  body: new FormData(login)
+				});
+				let result = await response.json();
+				if(result.status==1){
+					location.href = 'customer.php';
+				}else{
+					document.getElementById('unsuccess_msg').innerHTML = result.msg;
+					unsuccess_msg.style.display = 'block'; 
+				}
+			  };
+		</script>
+    </body>
+</html>

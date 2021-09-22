@@ -1,0 +1,26 @@
+.desctription{
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    
+}
+.desctription .floating-image{
+    max-width: 400px;
+}
+.desctription .floating-image.right{
+    float: right;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+.desctription{
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    
+}
+.desctription .floating-image{
+    max-width: 400px;
+}
+.desctription .floating-image.left{
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,161 @@
+body{
+	
+	margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: white;
+}
+.row {
+	display :flex;
+	align-content: center;
+}
+.row3 {
+	display :flex;
+	align-content: center;
+	background-color: #BFFFE9;	
+}
+
+.cal{
+position:relative;
+width:100%;
+min-height:2px;
+padding-right:15px;
+padding-left:15px;
+
+}
+.title {
+	text-align:center;
+	padding-bottom: 10px;
+}
+.contactus {
+     background-color: white;
+     padding: 40px 0px;
+}
+.contactus .title {
+ padding-bottom: 0px;   
+text-align: center;
+}
+
+.contactus .title h1 {
+	font-weight: bold;
+	font-weight: 500; 
+	font-size:60px;
+	font-family: Bree Serif;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+    background: #547d13;
+    display: inline-block;
+    padding: 20px 30px;
+
+}
+
+.about_side {
+	margin-top: 0px;
+	border-top: 2px solid #f0f0f0;
+	padding-top: 20px;
+	padding-left:30px;
+	padding-right:30px;
+	border-bottom: 2px solid #f0f0f0;
+	font-size:18px;
+	color:#666;
+	background-color: #f8f8fa;
+}
+.about_side h4 {
+	font-size: 34px;
+	font-family: Bree Serif;
+	color:#000;
+	
+}
+
+.padding1{
+	margin: 0px 0px 0px 0px;
+ 
+
+}
+.cal1{
+position:relative;
+width:50%;
+min-height:0px;
+padding-right:15px;
+padding-left:0px;
+}
+
+
+.title h3{
+	font-weight: bold;
+	font-family: Bree Serif;
+	color:#000;
+	font-weight: 500;
+	font-size:40px;
+	text-align:center;
+	height: 5px;
+	padding-bottom:0px;
+}
+.discription {
+	text-align: center;
+	margin-top: 0px;
+	font-size:18px;
+	padding-bottom:20px;
+	color:#666;	
+	border-radius: 20px;
+    margin-bottom: 30px;
+	margin:40px 40px;
+	background-color: 2bcc91;
+}
+.best_box {
+     text-align: center;
+     background-color: #2bcc91;
+     border-radius: 20px;
+     padding: 30px 20px;
+     margin-bottom: 30px;
+}
+.value{
+	display: flex;
+	justify-content: center;
+	padding-bottom:16px;
+	color:#666;
+	text-align:center;
+}
+.smallpic{
+	height: 100px;
+	width: 100px;
+}
+.smallpiccenter{
+	display: flex;
+	justify-content: center;
+	padding-bottom:0px;
+	height: 90px;
+}
+.value_h{
+	display: flex;
+	font-family:helvetica neue,Helvetica,Arial,sans-serif;
+	font-size:30px;
+	justify-content: center;
+	height: 70px;
+	color:#000;
+	
+}
+.valuecal{
+	position:relative;
+	width:100%;
+	min-height:2px;
+	padding-right:15px;
+	padding-left:15px;
+}
+.row4 {
+	display :flex;
+	margin-top:0px;
+	align-content: center;
+	padding-right:30px;
+	padding-left:30px;
+	padding-bottom:15px;
+	background-color: #BFFFE9;
+}
+.row5 {
+	display :flex;
+	align-content: center;
+	padding-right:30px;
+	padding-left:30px;
+	background-color: #BFFFE9;	
+}
